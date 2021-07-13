@@ -57,3 +57,20 @@ d. 查看公钥：cat id_rsa.pub 或者 vim id_rsa.pub
 ### 退出正在运行的git指令
 
 q
+
+### 提交到远程仓库
+
+git push origin master
+
+### 分支
+
+>  创建并切换到dev分支（-b表示切换）
+>
+> $ git checkout -b dev
+
+> git branch 查看当前分支
+
+> dev分支的工作完成，就可以切换回master分支
+>
+> $ git checkout master
+
