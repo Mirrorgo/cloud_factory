@@ -92,6 +92,8 @@ git push origin master
 
 ### 分支策略
 
+[分支管理策略 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/900005860592480)
+
 在实际开发中，我们应该按照几个基本原则进行分支管理：
 
 首先，`master`分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
@@ -111,3 +113,27 @@ git push origin master
 > 准备合并dev分支，请注意--no-ff参数，表示禁用Fast forward：
 >
 > $ git merge --no-ff -m "merge with no-ff" dev
+
+
+
+### 配置别名
+
+$ git config --global alias.st status
+$ git config --global alias.co checkout
+$ git config --global alias.ci commit
+$ git config --global alias.br branch
+
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+**配置Git的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。**
+
+
+
+### 其他待学习（比如git stash）
+
+[Bug分支 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/900388704535136)
+
+gitignore[忽略特殊文件 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208)
+
+
+
