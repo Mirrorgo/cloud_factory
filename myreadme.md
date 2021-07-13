@@ -64,13 +64,50 @@ git push origin master
 
 ### 分支
 
->  创建并切换到dev分支（-b表示切换）
+>  创建并切换到dev分支（-c表示创建）
 >
-> $ git checkout -b dev
+> $ git switch -c dev
 
 > git branch 查看当前分支
 
 > dev分支的工作完成，就可以切换回master分支
 >
-> $ git checkout master
+> $ git switch master
 
+> 处于master分支的时候，合并dev的工作成果到master
+>
+> $ git merge dev
+
+> 合并完成后，删除dev分支
+>
+> $ git branch -d dev
+
+> **注意：git checkout -- <file>是撤销修改**
+
+### 特殊：分支冲突（反复看）
+
+[解决冲突 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/900004111093344)
+
+
+
+### 分支策略
+
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+
+首先，`master`分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+
+那在哪干活呢？干活都在`dev`分支上，也就是说，`dev`分支是不稳定的，到某个时候，比如1.0版本发布时，再把`dev`分支合并到`master`上，在`master`分支发布1.0版本；
+
+你和你的小伙伴们每个人都在`dev`分支上干活，每个人都有自己的分支，时不时地往`dev`分支上合并就可以了。
+
+所以，团队合作的分支看起来就像这样：
+
+![git-br-policy](myreadme.assets/0)
+
+> 附：How 禁用fast forward(因为合并分支时，Git可能会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。)
+>
+> 
+>
+> 准备合并dev分支，请注意--no-ff参数，表示禁用Fast forward：
+>
+> $ git merge --no-ff -m "merge with no-ff" dev
