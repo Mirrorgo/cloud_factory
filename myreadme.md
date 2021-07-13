@@ -33,3 +33,23 @@ Git tracks changes of files.
 文件内容果然复原了。
 
 `git checkout -- file`命令中的`--`很重要，没有`--`，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到`git checkout`命令。
+
+
+
+(use "git restore --staged <file>..." to unstage)
+
+### ssh
+
+查看 ssh 公钥方法：
+
+1.通过命令窗口
+a. 打开你的 git bash 窗口
+b. 进入 .ssh 目录：cd ~/.ssh
+c. 找到 id_rsa.pub 文件：ls
+d. 查看公钥：cat id_rsa.pub 或者 vim id_rsa.pub
+
+
+
+[添加远程库 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440)
+
+[从远程库克隆 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/898732792973664)
