@@ -53,3 +53,7 @@ d. 查看公钥：cat id_rsa.pub 或者 vim id_rsa.pub
 [添加远程库 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440)
 
 [从远程库克隆 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/898732792973664)
+
+### 退出正在运行的git指令
+
+q
