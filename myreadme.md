@@ -64,13 +64,23 @@ git push origin master
 
 ### 分支
 
->  创建并切换到dev分支（-b表示切换）
+>  创建并切换到dev分支（-c表示创建）
 >
-> $ git checkout -b dev
+> $ git switch -c dev
 
 > git branch 查看当前分支
 
 > dev分支的工作完成，就可以切换回master分支
 >
-> $ git checkout master
+> $ git switch master
+
+> 处于master分支的时候，合并dev的工作成果到master
+>
+> $ git merge dev
+
+> 合并完成后，删除dev分支
+>
+> $ git branch -d dev
+
+> **注意：git checkout -- <file>是撤销修改**
 
