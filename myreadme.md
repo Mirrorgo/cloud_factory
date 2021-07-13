@@ -137,3 +137,11 @@ gitignore[忽略特殊文件 - 廖雪峰的官方网站 (liaoxuefeng.com)](https
 
 
 
+官网：[Git (git-scm.com)](https://git-scm.com/)
+
+常用命令pdf: [git-cheat-sheet (gitee.io)](https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf)
+
+GUI工具的使用：[使用SourceTree - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600/1317161920364578)
+
+
+
